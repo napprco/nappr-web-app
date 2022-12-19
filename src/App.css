@@ -131,6 +131,7 @@ Form Page
 
 .form-header {
   color: var(--primaryColor);
+  text-align: center;
 }
 .form-control {
   margin-block: 2rem;
@@ -202,4 +203,8 @@ Form Page
   .form {
     padding-inline: 28%;
   }
+}
+
+.form-question {
+  margin-top: 2rem;
 }

@@ -3,26 +3,18 @@ import { Link } from 'react-router-dom';
 import googleIcon from '../../assets/images/Google__G__Logo 1.png';
 import facebookIcon from '../../assets/images/1260673-removebg-preview 1.png';
 
-const SignIn: React.FC = () => {
+const SignUp = () => {
   return (
-    <div className='sign-in'>
-      <h1 className='form-header'>Login to NAPPR</h1>
-      <form action='' className='form login-form'>
+    <div className='sign-in sign-up'>
+      <h1 className='form-header'>Signup to NAPPR</h1>
+      <form action='' className='form signup-form'>
         <div className='form-control'>
           <label htmlFor='email'>Email</label>
           <div className='input-container'>
             <input type='text' placeholder='abcde@gmail.com' name='email' />
           </div>
         </div>
-        <div className='form-control password'>
-          <label htmlFor='email'>Password</label>
-          <div className='input-container'>
-            <input type='text' placeholder='*******' name='email' />
-          </div>
-          <p>
-            <Link to='signup'>Forget Password</Link>{' '}
-          </p>
-        </div>
+
         <p className='form-text'>Or</p>
         <div className='other-login-method facebook'>
           <div className='method-icon'>
@@ -37,12 +29,12 @@ const SignIn: React.FC = () => {
           <p>Continue with Facebook</p>
         </div>
         <button type='submit' className='submit-btn'>
-          Login
+          Signup
         </button>
-        <p>
-          Do not have an account yet?{' '}
-          <Link to='/signup' className='signup-btn'>
-            Signup
+        <p className='form-question'>
+          Already have an account?{' '}
+          <Link to='/signin' className='signup-btn'>
+            Signin
           </Link>
         </p>
       </form>
@@ -50,4 +42,4 @@ const SignIn: React.FC = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;
