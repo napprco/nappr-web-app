@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --primaryColor: #0e65ee;
+  --whiteColor: #fff;
+  --lightGrey: rgba(0, 0, 0, 0.7);
+  --primaryFont: 'Open Sans', sans-serif;
+  --radius: 0.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: var(--primaryFont);
+}
+.choose-plan {
+  padding: 2.5rem;
+}
+.choose-plan h1 {
+  color: var(--primaryColor);
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.subscribe-image-container {
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.subscribe-img {
+  width: 100%;
+}
+.plans-container {
+  padding-inline: 2.2rem;
+}
+.single-plan {
+  padding: 1rem;
+  height: 93px;
+  width: 100%;
+  margin-block: 2.8rem;
+  border: 0.3px solid Var(--primaryColor);
+  border-radius: 10px;
+}
+.plan-header {
+  font-size: 1.125rem;
+  margin-bottom: 0.2rem;
+  color: var(--primaryColor);
+}
+.single-plan p {
+  color: var(--lightGrey);
+}
+.best-plan {
+  position: relative;
+}
+.best-plan-flag {
+  height: 20px;
+  width: 75px;
+  padding-inline: 0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--primaryColor);
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 10px;
+}
+.best-plan-flag img {
+  width: 8px;
+  height: 8px;
+}
+.best-plan-flag p {
+  color: var(--whiteColor);
+  font-size: 12px;
+}
+.cancel-link-container {
+  margin-top: -1rem;
+  display: flex;
+  justify-content: center;
+}
+.cancel-link {
+  color: var(--primaryColor);
+}
+
+.trial-link-container {
+  margin-top: 4rem;
+  background: var(--primaryColor);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+.trial-link {
+  color: var(--whiteColor);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 765px) {
+  .choose-plan {
+    padding-inline: 5rem;
+  }
+  .plans-container {
+    padding-inline: 20%;
+  }
+  .single-plan {
+    margin-block: 3rem;
+  }
+}
