@@ -16,6 +16,7 @@ a {
 }
 body {
   font-family: var(--primaryFont);
+  color: var(--lightGrey);
 }
 .choose-plan {
   padding: 2.5rem;
@@ -112,5 +113,93 @@ body {
   }
   .single-plan {
     margin-block: 3rem;
+  }
+}
+
+/*
+=============
+Form Page
+=============
+*/
+
+.sign-in {
+  padding: 2rem;
+}
+.form {
+  padding-inline: 2.2rem;
+}
+
+.form-header {
+  color: var(--primaryColor);
+}
+.form-control {
+  margin-block: 2rem;
+}
+
+.form-control label {
+  display: block;
+  color: var(--primaryColor);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.input-container {
+  height: 50px;
+  width: 100%;
+}
+.input-container input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 1.2rem;
+  border: 0.5px solid var(--primaryColor);
+}
+.password p {
+  text-align: right;
+  margin-top: 1rem;
+  color: var(--primaryColor);
+}
+
+.form-text {
+  margin-block: 2rem;
+  text-align: center;
+}
+
+.other-login-method {
+  padding: 1rem;
+  width: 100%;
+  height: 50px;
+  border: 0.5px solid var(--primaryColor);
+  border-radius: var(--radius);
+  margin-top: 2rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 2rem;
+}
+
+.submit-btn {
+  margin-top: 4.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 50px;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  border: none;
+  font-size: 1.2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.signup-btn {
+  color: var(--primaryColor);
+}
+
+@media screen and (min-width: 768px) {
+  .form-header {
+    padding-inline: 10%;
+  }
+  .form {
+    padding-inline: 28%;
   }
 }
