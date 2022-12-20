@@ -16,11 +16,16 @@ const ResetPasswordTwo: React.FC = () => {
         </div>
 
         <button type='button' className='submit-btn get-code-btn'>
-          <Link to='/resetpasswordtwo' className='submit-btn-link'>
+          <Link to='/resetpasswordthree' className='submit-btn-link'>
             Resend Code
           </Link>
         </button>
-        <p className='form-question'>Already have an account? </p>
+        <p className='form-question'>
+          Already have an account?
+          <Link to='/signup' className='signup-btn'>
+            Signup
+          </Link>{' '}
+        </p>
       </form>
     </div>
   );
