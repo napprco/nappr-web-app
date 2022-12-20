@@ -5,7 +5,7 @@ import facebookIcon from '../../assets/images/1260673-removebg-preview 1.png';
 
 const SignIn: React.FC = () => {
   return (
-    <div className='sign-in'>
+    <div className='page sign-in'>
       <h1 className='form-header'>Login to NAPPR</h1>
       <form action='' className='form login-form'>
         <div className='form-control'>
@@ -20,7 +20,7 @@ const SignIn: React.FC = () => {
             <input type='text' placeholder='*******' name='email' />
           </div>
           <p>
-            <Link to='signup'>Forget Password</Link>{' '}
+            <Link to='/resetpassword'>Forget Password</Link>{' '}
           </p>
         </div>
         <p className='form-text'>Or</p>

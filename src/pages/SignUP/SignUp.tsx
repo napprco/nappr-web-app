@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import googleIcon from '../../assets/images/Google__G__Logo 1.png';
 import facebookIcon from '../../assets/images/1260673-removebg-preview 1.png';
 
-const SignUp = () => {
+const SignUp: React.FC = () => {
   return (
-    <div className='sign-in sign-up'>
+    <div className='page sign-up'>
       <h1 className='form-header'>Signup to NAPPR</h1>
       <form action='' className='form signup-form'>
         <div className='form-control'>
