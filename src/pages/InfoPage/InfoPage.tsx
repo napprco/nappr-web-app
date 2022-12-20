@@ -45,7 +45,7 @@ const InfoPage: React.FC = () => {
           </div>
         </div>
         <button type='submit' className='submit-btn'>
-          <Link to='/info' className='submit-btn-link'>
+          <Link to='/purpose' className='submit-btn-link'>
             Next
           </Link>
         </button>
