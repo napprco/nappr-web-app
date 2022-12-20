@@ -7,6 +7,7 @@ import SignUp from './pages/SignUP/SignUp';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
 import ResetPasswordTwo from './pages/ResetPassword/ResetPasswordTwo';
 import ResetPasswordThree from './pages/ResetPassword/ResetPasswordThree';
+import InfoPage from './pages/InfoPage/InfoPage';
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/resetpassword' element={<ResetPassword />}></Route>
         <Route path='/resetpasswordtwo' element={<ResetPasswordTwo />}></Route>
         <Route path='/resetpasswordthree' element={<ResetPasswordThree />}></Route>
+        <Route path='/info' element={<InfoPage />}></Route>
       </Routes>
     </div>
   );

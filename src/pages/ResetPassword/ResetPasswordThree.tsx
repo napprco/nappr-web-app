@@ -17,11 +17,11 @@ const ResetPasswordThree: React.FC = () => {
           <label htmlFor='email'>Confirm Password</label>
           <div className='input-container'>
             <input type='password' placeholder='*******' name='email' />
-            <p id="password-match-text">Both Passwords must match </p>
+            <p id='password-match-text'>Both Passwords must match </p>
           </div>
         </div>
         <button type='submit' className='submit-btn'>
-          <Link to='/resetpasswordthree' className='submit-btn-link'>
+          <Link to='/info' className='submit-btn-link'>
             Reset
           </Link>
         </button>

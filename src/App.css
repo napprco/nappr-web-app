@@ -188,15 +188,22 @@ Form Page
   background: var(--primaryColor);
   border: none;
   font-size: 1.2rem;
+  color: var(--whiteColor);
 
   border-radius: var(--radius);
   cursor: pointer;
 }
 .submit-btn-link {
   color: var(--whiteColor);
+  display: inline-block;
+  padding-top: 1rem;
+  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 .signup-btn {
   color: var(--primaryColor);
+  padding-left: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,4 +233,45 @@ Form Page
 #password-match-text {
   text-align: left;
   color: var(--lightGrey);
+}
+
+/*Info Page*/
+
+.city-options {
+  margin-top: 2rem;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 10px;
+  border: 0.5px solid var(--primaryColor);
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--lightGrey);
+}
+
+.info-form-question {
+  margin-top: -1px;
+}
+.number-input-control {
+  display: flex;
+  gap: 1rem;
+}
+.call-code {
+  width: 56px;
+  height: 50px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  border: 0.5px solid var(--primaryColor);
+}
+.number-input {
+  width: 100%;
+}
+.number-input input {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0.5px solid var(--primaryColor);
+  outline: none;
+  padding: 1rem;
+  font-size: 1rem;
 }
