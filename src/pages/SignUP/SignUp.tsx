@@ -28,8 +28,10 @@ const SignUp: React.FC = () => {
           </div>
           <p>Continue with Facebook</p>
         </div>
-        <button type='submit' className='submit-btn'>
-          Signup
+        <button type='button' className='submit-btn'>
+          <Link to='/info' className='submit-btn-link'>
+            Sign Up
+          </Link>
         </button>
         <p className='form-question'>
           Already have an account?{' '}
