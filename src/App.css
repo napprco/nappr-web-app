@@ -291,6 +291,28 @@ Form Page
   font-weight: bold;
 }
 
+/*Desktop Menu */
+.desktop-menu {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+.desktop-menu-list {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.desktop-menu img {
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+}
 /*mobile Menu */
 .mobile-menu {
   margin-right: 2rem;
@@ -335,8 +357,8 @@ Form Page
   color: var(--lightGrey);
 }
 
-@media screen and (min-width:768px){
-  .mobile-menu{
-    display:none;
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
   }
 }
