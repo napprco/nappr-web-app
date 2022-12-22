@@ -1,0 +1,22 @@
+.nappr-home {
+  padding-inline: 3rem;
+}
+.nappr-home-header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.menu-bar {
+  margin-top: 1rem;
+}
+.person-icon-container {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .nappr-home-header {
+    display: none;
+  }
+}

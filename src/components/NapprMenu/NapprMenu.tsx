@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import companyLogo from '../../assets/images/image 1.png';
+import userIcon from '../../assets/images/Male User.png';
 
-const NapprMenu = () => {
+import SearchInput from '../SearchInput/SearchInput';
+
+const NapprMenu: React.FC = () => {
   return (
     <section className='nappr-menu'>
       <article className='desktop-menu'>
@@ -33,14 +36,12 @@ const NapprMenu = () => {
             Privacy Policy
           </Link>
         </div>
+        <div className='user-icon'>
+          <img src={userIcon} alt='' />
+        </div>
       </article>
       <article className='mobile-menu'>
         <div className='mobile-menu-header'>
-          {/* <div className='menu-bar'>
-            <span>
-              <i className='fa fa-bars' aria-hidden='true'></i>
-            </span>
-          </div> */}
           <div className='company-logo'>
             <img src={companyLogo} alt='' />
           </div>
@@ -72,6 +73,7 @@ const NapprMenu = () => {
           </div>
         </div>
       </article>
+      <SearchInput />
     </section>
   );
 };
