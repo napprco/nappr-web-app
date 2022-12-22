@@ -24,7 +24,7 @@ const PurposePage = () => {
           </div>
         </div>
         <button type='submit' className='submit-btn'>
-          <Link to='/info' className='submit-btn-link'>
+          <Link to='/home' className='submit-btn-link'>
             Sign up
           </Link>
         </button>
