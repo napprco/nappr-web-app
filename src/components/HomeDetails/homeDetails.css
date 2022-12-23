@@ -1,0 +1,22 @@
+.home-details {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.banner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background: var(--cardColor);
+  padding-bottom: 2rem;
+  max-width: 600px;
+}
+.banner-item p {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.banner-item img {
+  width: 100%;
+  max-width: 600px;
+}

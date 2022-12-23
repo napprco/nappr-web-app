@@ -1,0 +1,14 @@
+.nappr-btn {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.nappr-btn button {
+  width: 200px;
+  height: 50px;
+  border-radius: var(--radius);
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  border: none;
+  font-size: 1rem;
+}
