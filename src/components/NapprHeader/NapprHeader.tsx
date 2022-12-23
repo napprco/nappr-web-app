@@ -5,7 +5,7 @@ import userIcon from '../../assets/images/Male User.png';
 import { AppContext } from '../../appContext/appContext';
 import SearchInput from '../SearchInput/SearchInput';
 
-const NapprHeader = () => {
+const NapprHeader: React.FC = () => {
   const { handleShowMobileMenu } = useContext(AppContext);
   return (
     <div>

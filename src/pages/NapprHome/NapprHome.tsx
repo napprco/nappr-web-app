@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { AppContext } from '../../appContext/appContext';
+import NapprFooter from '../../components/NapprFooter/NapprFooter';
 
 import './napprHome.css';
 import NapprHeader from '../../components/NapprHeader/NapprHeader';
@@ -10,6 +9,7 @@ const NapprHome: React.FC = () => {
     <section className='nappr-home'>
       <NapprHeader />
       <NapprMenu />
+      <NapprFooter imageSource='../../assets/images/Referee Jersey.png' />
     </section>
   );
 };

@@ -6,3 +6,7 @@ export interface AppContextProps {
 export interface ProviderProps {
   children: React.ReactNode;
 }
+
+export interface NapprFooterProps {
+  imageSource: string;
+}

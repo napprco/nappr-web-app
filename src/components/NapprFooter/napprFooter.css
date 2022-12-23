@@ -1,0 +1,12 @@
+.nappr-footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-single-icon img {
+  cursor: pointer;
+}
