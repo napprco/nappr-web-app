@@ -8,19 +8,23 @@ import SearchInput from '../../components/SearchInput/SearchInput';
 const NapprHome: React.FC = () => {
   return (
     <section className='nappr-home'>
-      <article className='nappr-home-header'>
-        <div className='menu-bar'>
-          <span>
-            <i className='fa fa-bars' aria-hidden='true'></i>
-          </span>
-        </div>
-        <div className='company-logo'>
-          <img src={companyLogo} alt='' />
-        </div>
-        <div className='person-icon-container'>
-          <img src={userIcon} alt='' />
-        </div>
-      </article>
+      <div>
+        <article className='nappr-home-header'>
+          <div className='menu-bar'>
+            <span>
+              <i className='fa fa-bars' aria-hidden='true'></i>
+            </span>
+          </div>
+          <div className='company-logo'>
+            <img src={companyLogo} alt='' />
+          </div>
+          <div className='person-icon-container'>
+            <img src={userIcon} alt='' />
+          </div>
+        </article>
+        <SearchInput />
+      </div>
+
       <NapprMenu />
     </section>
   );

@@ -1,7 +1,9 @@
 .nappr-home {
+  width: 100%;
   padding-inline: 3rem;
 }
 .nappr-home-header {
+  z-index: 99;
   display: flex;
   padding: 1rem;
   justify-content: space-between;

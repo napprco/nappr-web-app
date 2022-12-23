@@ -37,7 +37,9 @@ const SignIn: React.FC = () => {
           <p>Continue with Facebook</p>
         </div>
         <button type='submit' className='submit-btn'>
-          Login
+          <Link to='/info' className='submit-btn-link'>
+            Login
+          </Link>
         </button>
         <p>
           Do not have an account yet?{' '}

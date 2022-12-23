@@ -40,40 +40,44 @@ const NapprMenu: React.FC = () => {
           <img src={userIcon} alt='' />
         </div>
       </article>
-      <article className='mobile-menu'>
-        <div className='mobile-menu-header'>
-          <div className='company-logo'>
-            <img src={companyLogo} alt='' />
+      <div className='mobile-menu-container'>
+        <span className='close-btn'>
+          <i className='fa fa-times' aria-hidden='true'></i>
+        </span>
+        <article className='mobile-menu'>
+          <div className='mobile-menu-header'>
+            <div className='company-logo'>
+              <img src={companyLogo} alt='' />
+            </div>
           </div>
-        </div>
-        <div className='divider'></div>
-        <div className='mobile-menu-list'>
-          <Link to='' className='mobile-menu-item'>
-            About Us
-          </Link>
-          <Link to='' className='mobile-menu-item'>
-            Cancellation Policy
-          </Link>
-          <Link to='' className='mobile-menu-item'>
-            Hosting Resources
-          </Link>
-          <Link to='' className='mobile-menu-item'>
-            Health and Safety Updates{' '}
-          </Link>
-          <Link to='' className='mobile-menu-item'>
-            Help and Support
-          </Link>
-          <div className='mobile-menu-footer'>
+          <div className='divider'></div>
+          <div className='mobile-menu-list'>
             <Link to='' className='mobile-menu-item'>
-              Terms and Conditions
+              About Us
             </Link>
             <Link to='' className='mobile-menu-item'>
-              Privacy Policy
+              Cancellation Policy
             </Link>
+            <Link to='' className='mobile-menu-item'>
+              Hosting Resources
+            </Link>
+            <Link to='' className='mobile-menu-item'>
+              Health and Safety Updates{' '}
+            </Link>
+            <Link to='' className='mobile-menu-item'>
+              Help and Support
+            </Link>
+            <div className='mobile-menu-footer'>
+              <Link to='' className='mobile-menu-item'>
+                Terms and Conditions
+              </Link>
+              <Link to='' className='mobile-menu-item'>
+                Privacy Policy
+              </Link>
+            </div>
           </div>
-        </div>
-      </article>
-      <SearchInput />
+        </article>
+      </div>
     </section>
   );
 };

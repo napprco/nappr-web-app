@@ -15,4 +15,13 @@
   position: absolute;
   right: 2rem;
   top: 1.2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
 }
