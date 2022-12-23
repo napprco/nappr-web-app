@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import companyLogo from '../../assets/images/image 1.png';
 import userIcon from '../../assets/images/Male User.png';
 
-import SearchInput from '../SearchInput/SearchInput';
-
 const NapprMenu: React.FC = () => {
   return (
     <section className='nappr-menu'>
