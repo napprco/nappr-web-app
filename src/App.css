@@ -328,8 +328,11 @@ Form Page
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+
+  transition: var(--transition);
   margin-left: -100%;
 }
+
 .close-btn {
   position: absolute;
   right: 3rem;
@@ -357,6 +360,9 @@ Form Page
   background: var(--whiteColor);
   min-height: 100vh;
   box-shadow: 0 7px 40px -10px rgba(150, 170, 180, 0.5);
+}
+.show-mobile-menu {
+  margin-left: 0;
 }
 
 .menu-bar i {
@@ -394,6 +400,9 @@ Form Page
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-container {
     display: none;
   }
 }

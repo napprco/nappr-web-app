@@ -1,10 +1,12 @@
-import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import companyLogo from '../../assets/images/image 1.png';
 import userIcon from '../../assets/images/Male User.png';
+import { AppContext } from '../../appContext/appContext';
 
 const NapprMenu: React.FC = () => {
+  const { isMobileMenu, handleShowMobileMenu } = useContext(AppContext);
   return (
     <section className='nappr-menu'>
       <article className='desktop-menu'>
@@ -38,8 +40,8 @@ const NapprMenu: React.FC = () => {
           <img src={userIcon} alt='' />
         </div>
       </article>
-      <div className='mobile-menu-container'>
-        <span className='close-btn'>
+      <div className={`mobile-menu-container ${isMobileMenu ? 'show-mobile-menu' : ''}`}>
+        <span className='close-btn' onClick={handleShowMobileMenu}>
           <i className='fa fa-times' aria-hidden='true'></i>
         </span>
         <article className='mobile-menu'>
