@@ -12,7 +12,7 @@ import securityIcon from '../../assets/images/Privacy.png';
 import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
 
-const UserAccount = () => {
+const UserAccount: React.FC = () => {
   const { isUserAccount, handleShowUserAccount } = useContext(AppContext);
   return (
     <div className={`user-account ${isUserAccount ? 'show-user-account' : ''}`}>
@@ -73,7 +73,7 @@ const UserAccount = () => {
               </Link>
             </li>
             <li>
-              <Link to='' className='user-account-item'>
+              <Link to='/privacysetting' className='user-account-item'>
                 <div className='user-account-item-icon'>
                   <img src={securityIcon} alt='' />
                 </div>

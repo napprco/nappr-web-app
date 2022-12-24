@@ -10,6 +10,7 @@ import ResetPasswordThree from './pages/ResetPassword/ResetPasswordThree';
 import InfoPage from './pages/InfoPage/InfoPage';
 import PurposePage from './pages/PurposePage/PurposePage';
 import NapprHome from './pages/NapprHome/NapprHome';
+import PrivacySetting from './pages/PrivacySetting/PrivacySetting';
 function App() {
   return (
     <div>
@@ -23,6 +24,7 @@ function App() {
         <Route path='/info' element={<InfoPage />}></Route>
         <Route path='/purpose' element={<PurposePage />}></Route>
         <Route path='/home' element={<NapprHome />}></Route>
+        <Route path='/privacysetting' element={<PrivacySetting />}></Route>
       </Routes>
     </div>
   );
