@@ -1,0 +1,59 @@
+.nappr-appartments {
+  margin-block: 2rem;
+}
+
+.appartments-header {
+  margin-bottom: 1.3rem;
+  color: var(--primaryColor);
+}
+
+.appartments {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.single-appartment {
+  position: relative;
+  min-width: 250px;
+  max-width: 400px;
+  background: var(--cardColor);
+  padding-bottom: 1rem;
+}
+.single-appartment img {
+  width: 100%;
+  height: 200px;
+}
+.single-appartment-contents {
+  padding-inline: 1rem;
+}
+.arrow-icon-container {
+  position: absolute;
+  right: 1rem;
+  top: 4rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-icon-container i {
+  color: var(--whiteColor);
+}
+
+@media screen and (max-width: 280px) {
+  .appartments {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .appartments {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -5,6 +5,7 @@ import NapprHeader from '../../components/NapprHeader/NapprHeader';
 import NapprMenu from '../../components/NapprMenu/NapprMenu';
 import HomeDetails from '../../components/HomeDetails/HomeDetails';
 import Button from '../../components/Button/Button';
+import NapprAppartments from '../../components/NapprAppartments/NapprAppartments';
 
 const NapprHome: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const NapprHome: React.FC = () => {
       <HomeDetails />
       <NapprFooter />
       <Button text='I am Flexible' />
+      <NapprAppartments />
     </section>
   );
 };
