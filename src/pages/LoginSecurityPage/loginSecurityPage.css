@@ -1,0 +1,63 @@
+.login-security-item {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding-inline: 2rem;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.login-security-item h2 {
+  font-weight: bold;
+  color: black;
+}
+.login-history {
+  display: flex;
+  gap: 1rem;
+}
+.login-security-btn {
+  color: var(--primaryColor);
+}
+
+.account-security {
+  margin-top: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 0;
+}
+
+.improve-securty-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.progress-bar-container {
+  margin-top: 1.5rem;
+  height: 5px;
+  width: 250px;
+  background: var(--progressBg);
+  border-radius: 3px;
+}
+.progress-bar {
+  height: 100%;
+  width: 20%;
+  background: red;
+  border-radius: 3px;
+}
+.security-level-text {
+  color: red;
+}
+
+
+@media screen and (min-width:748px){
+    .login-security-page{
+        padding-inline:20%;
+    }
+}

@@ -9,6 +9,8 @@
   --primaryFont: 'Open Sans', sans-serif;
   --radius: 0.5rem;
   --cardColor: #cfcfcf;
+  --progressBg: #c4c4c4;
+
   --transition: all 0.3s linear;
 }
 
@@ -418,4 +420,13 @@ Form Page
   height: 30px;
   cursor: pointer;
   margin-top: 1.7rem;
+}
+
+/*Settings Pages Generalstyles */
+
+.setting-pages-header {
+  padding: 2rem;
+  color: var(--primaryColor);
+  font-size: 2rem;
+  font-weight: bold;
 }

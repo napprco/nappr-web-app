@@ -11,6 +11,7 @@ import InfoPage from './pages/InfoPage/InfoPage';
 import PurposePage from './pages/PurposePage/PurposePage';
 import NapprHome from './pages/NapprHome/NapprHome';
 import PrivacySetting from './pages/PrivacySetting/PrivacySetting';
+import LoginSecurityPage from './pages/LoginSecurityPage/LoginSecurityPage';
 function App() {
   return (
     <div>
@@ -25,6 +26,7 @@ function App() {
         <Route path='/purpose' element={<PurposePage />}></Route>
         <Route path='/home' element={<NapprHome />}></Route>
         <Route path='/privacysetting' element={<PrivacySetting />}></Route>
+        <Route path='/loginsecurity' element={<LoginSecurityPage />}></Route>
       </Routes>
     </div>
   );

@@ -5,8 +5,8 @@ import './privacySetting.css';
 const PrivacySetting = () => {
   return (
     <div className='privacy-setting'>
-      <h1 className='privacy-setting-header'>Privacy Settings</h1>
-      <Link to='' className='privacy-setting-item'>
+      <h1 className='setting-pages-header'>Privacy Settings</h1>
+      <Link to='/loginsecurity' className='privacy-setting-item'>
         <div>
           <h3>Login and Security</h3>
           <p>Password and Login activity</p>
