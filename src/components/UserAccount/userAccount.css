@@ -3,12 +3,11 @@
   position: fixed;
   top: 0;
   left: 0;
-
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   transition: var(--transition);
-  margin-right: -100%;
   z-index: 100;
+  margin-left: -100%;
 }
 .account-close-btn {
   position: absolute;
@@ -35,7 +34,7 @@
   min-height: 100vh;
 }
 .show-user-account {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .user-account-header {
@@ -85,4 +84,22 @@
 .account-logout-btn {
   display: inline-block;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .account-close-btn {
+    right: 0.3rem;
+  }
+  .verify-btn {
+    margin-block: 1rem;
+  }
+  .user-account-info {
+    margin-top: 3rem;
+  }
+  .user-personal-details h2 {
+    font-size: 1.2rem;
+  }
+  .user-account-info h2 {
+    font-size: 1.2rem;
+  }
 }

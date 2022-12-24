@@ -8,7 +8,9 @@ export const AppContextProvider: React.FC<ProviderProps> = ({ children }) => {
   const [isMobileMenu, setIsMobileMenu] = useState<boolean>(false);
   const [isUserAccount, setIsUserAccount] = useState<boolean>(false);
   const handleShowMobileMenu = () => setIsMobileMenu(!isMobileMenu);
-  const handleShowUserAccount = () => setIsUserAccount(!isUserAccount);
+  const handleShowUserAccount = () => {
+    setIsUserAccount(!isUserAccount);
+  };
   return (
     <AppContext.Provider
       value={{

@@ -6,7 +6,7 @@ import userIcon from '../../assets/images/Male User.png';
 import { AppContext } from '../../appContext/appContext';
 
 const NapprMenu: React.FC = () => {
-  const { isMobileMenu, handleShowMobileMenu } = useContext(AppContext);
+  const { isMobileMenu, handleShowMobileMenu, handleShowUserAccount } = useContext(AppContext);
   return (
     <section className='nappr-menu'>
       <article className='desktop-menu'>
@@ -36,7 +36,7 @@ const NapprMenu: React.FC = () => {
             Privacy Policy
           </Link>
         </div>
-        <div className='user-icon'>
+        <div className='user-icon' onClick={handleShowUserAccount}>
           <img src={userIcon} alt='' />
         </div>
       </article>
