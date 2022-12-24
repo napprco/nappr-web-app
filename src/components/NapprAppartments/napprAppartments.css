@@ -51,9 +51,15 @@
     gap: 2rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .appartments {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .appartments-header {
+    text-align: center;
   }
 }

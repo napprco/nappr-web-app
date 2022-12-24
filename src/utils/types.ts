@@ -1,6 +1,8 @@
 export interface AppContextProps {
   isMobileMenu: boolean;
+  isUserAccount: boolean;
   handleShowMobileMenu: () => void;
+  handleShowUserAccount: () => void;
 }
 export interface ButtonProps {
   text: string;

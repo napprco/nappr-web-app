@@ -2,12 +2,11 @@ import { useContext } from 'react';
 
 import companyLogo from '../../assets/images/image 1.png';
 import userIcon from '../../assets/images/Male User.png';
-
 import { AppContext } from '../../appContext/appContext';
 import SearchInput from '../SearchInput/SearchInput';
 
 const NapprHeader: React.FC = () => {
-  const { handleShowMobileMenu } = useContext(AppContext);
+  const { handleShowMobileMenu, handleShowUserAccount } = useContext(AppContext);
   return (
     <div>
       <article className='nappr-home-header'>
@@ -19,7 +18,7 @@ const NapprHeader: React.FC = () => {
         <div className='company-logo'>
           <img src={companyLogo} alt='' />
         </div>
-        <div className='person-icon-container'>
+        <div className='person-icon-container' onClick={handleShowUserAccount}>
           <img src={userIcon} alt='' />
         </div>
       </article>
