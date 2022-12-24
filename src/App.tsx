@@ -12,6 +12,7 @@ import PurposePage from './pages/PurposePage/PurposePage';
 import NapprHome from './pages/NapprHome/NapprHome';
 import PrivacySetting from './pages/PrivacySetting/PrivacySetting';
 import LoginSecurityPage from './pages/LoginSecurityPage/LoginSecurityPage';
+import PasswordUpdate from './pages/PasswordUpdate/PasswordUpdate';
 function App() {
   return (
     <div>
@@ -27,6 +28,7 @@ function App() {
         <Route path='/home' element={<NapprHome />}></Route>
         <Route path='/privacysetting' element={<PrivacySetting />}></Route>
         <Route path='/loginsecurity' element={<LoginSecurityPage />}></Route>
+        <Route path='/updatepassword' element={<PasswordUpdate />}></Route>
       </Routes>
     </div>
   );

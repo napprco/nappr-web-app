@@ -12,7 +12,7 @@ const LoginSecurityPage = () => {
           <h2>Password</h2>
           <p>Last Updated 6 days ago</p>
         </div>
-        <Link to='' className='login-security-btn'>
+        <Link to='/updatepassword' className='login-security-btn'>
           Change
         </Link>
       </article>
