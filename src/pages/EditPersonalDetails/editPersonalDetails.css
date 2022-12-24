@@ -1,0 +1,18 @@
+.edit-info-item {
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  margin-top: -1px;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.edit-info-item h3 {
+  color: var(--primaryColor);
+}
+
+.edit-info-item p {
+  color: var(--lightGrey);
+}

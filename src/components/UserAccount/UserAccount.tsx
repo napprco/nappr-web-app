@@ -41,7 +41,7 @@ const UserAccount: React.FC = () => {
           <h2>Account</h2>
           <ul className='user-account-items'>
             <li>
-              <Link to='' className='user-account-item'>
+              <Link to='/home/editdetails' className='user-account-item'>
                 <div className='user-account-item-icon'>
                   <img src={profileIcon} alt='' />
                 </div>

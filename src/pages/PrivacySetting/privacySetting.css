@@ -1,12 +1,6 @@
 /* .privacy-setting {
   padding: 2rem;
 } */
-.setting-pages-header {
-  padding: 2rem;
-  color: var(--primaryColor);
-  font-size: 2rem;
-  font-weight: bold;
-}
 
 .privacy-setting-item {
   height: 100px;
