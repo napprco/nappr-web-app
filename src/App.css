@@ -103,11 +103,15 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: var(--radius);
+  cursor: pointer;
 }
 .trial-link {
   color: var(--whiteColor);
   font-weight: 600;
+  display: inline-block;
   font-size: 1.125rem;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 500px) {

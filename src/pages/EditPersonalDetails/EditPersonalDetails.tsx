@@ -51,7 +51,7 @@ const EditPersonalDetails = () => {
           </span>
         </Link>
         <button type='submit' className='submit-btn'>
-          <Link to='/purpose' className='submit-btn-link'>
+          <Link to='' className='submit-btn-link'>
             Save
           </Link>
         </button>
