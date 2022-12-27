@@ -16,6 +16,7 @@ import PasswordUpdate from './pages/PasswordUpdate/PasswordUpdate';
 import EditPersonalDetails from './pages/EditPersonalDetails/EditPersonalDetails';
 import PaymentMethod from './pages/PaymentMethod/PaymentMethod';
 import Subscription from './pages/Subscription/Subscription';
+import OrderSummary from './pages/OrderSummary/OrderSummary';
 function App() {
   return (
     <div>
@@ -35,6 +36,7 @@ function App() {
         <Route path='/home/editdetails' element={<EditPersonalDetails />}></Route>
         <Route path='/home/payment/method' element={<PaymentMethod />}></Route>
         <Route path='/home/subscription' element={<Subscription />}></Route>
+        <Route path='/home/order' element={<OrderSummary />}></Route>
       </Routes>
     </div>
   );

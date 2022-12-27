@@ -64,7 +64,7 @@ const UserAccount: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to='' className='user-account-item nap'>
+              <Link to='/home/order' className='user-account-item nap'>
                 <div className='user-account-item-icon'>
                   <img src={napIcon} alt='' />
                 </div>
