@@ -13,3 +13,20 @@
   border: none;
   font-size: 1rem;
 }
+
+.back-btn {
+  width: 100px;
+  height: 50px;
+  background: var(--primaryColor);
+  margin: 1.5rem;
+  border-radius: var(--radius);
+}
+
+.back-link {
+  color: var(--whiteColor);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

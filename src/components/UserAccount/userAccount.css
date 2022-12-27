@@ -63,7 +63,7 @@
   height: 50px;
   padding-left: 0.5rem;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .user-account-info {
   margin-top: 2.5rem;

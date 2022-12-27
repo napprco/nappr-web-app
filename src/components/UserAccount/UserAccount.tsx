@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 import { AppContext } from '../../appContext/appContext';
 import './userAccount.css';
@@ -8,9 +9,7 @@ import paymentIcon from '../../assets/images/Card Security.png';
 import subscribeIcon from '../../assets/images/Best Seller.png';
 import napIcon from '../../assets/images/Sleeping in Bed.png';
 import securityIcon from '../../assets/images/Privacy.png';
-
 import Button from '../Button/Button';
-import { Link } from 'react-router-dom';
 
 const UserAccount: React.FC = () => {
   const { isUserAccount, handleShowUserAccount } = useContext(AppContext);
@@ -49,7 +48,7 @@ const UserAccount: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to='' className='user-account-item'>
+              <Link to='/home/payment/method' className='user-account-item'>
                 <div className='user-account-item-icon'>
                   <img src={paymentIcon} alt='' />
                 </div>

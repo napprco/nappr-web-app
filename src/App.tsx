@@ -14,6 +14,7 @@ import PrivacySetting from './pages/PrivacySetting/PrivacySetting';
 import LoginSecurityPage from './pages/LoginSecurityPage/LoginSecurityPage';
 import PasswordUpdate from './pages/PasswordUpdate/PasswordUpdate';
 import EditPersonalDetails from './pages/EditPersonalDetails/EditPersonalDetails';
+import PaymentMethod from './pages/PaymentMethod/PaymentMethod';
 function App() {
   return (
     <div>
@@ -31,6 +32,7 @@ function App() {
         <Route path='/loginsecurity' element={<LoginSecurityPage />}></Route>
         <Route path='/updatepassword' element={<PasswordUpdate />}></Route>
         <Route path='/home/editdetails' element={<EditPersonalDetails />}></Route>
+        <Route path='/home/payment/method' element={<PaymentMethod />}></Route>
       </Routes>
     </div>
   );

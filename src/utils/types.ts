@@ -7,6 +7,9 @@ export interface AppContextProps {
 export interface ButtonProps {
   text: string;
 }
+export interface BackButtonProps {
+  page: string;
+}
 
 export interface ProviderProps {
   children: React.ReactNode;
