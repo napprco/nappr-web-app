@@ -1,0 +1,35 @@
+.payment-method {
+  padding-inline: 2rem;
+}
+.payment-header {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment-header h1 {
+  color: var(--primaryColor);
+}
+.payment-header button {
+  border: none;
+  color: var(--primaryColor);
+  font-size: 3rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-details {
+  display: flex;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 748px) {
+  .payment-method {
+    padding-inline: 20%;
+  }
+}
