@@ -47,10 +47,12 @@ const LoginSecurityPage = () => {
           <div className='progress-bar'></div>
         </div>
         <p className='security-level-text'>Low</p>
+      </article>
+      <div className='improve-security-btn-container'>
         <Link to='' className='improve-securty-btn'>
           Improve
         </Link>
-      </article>
+      </div>
     </div>
   );
 };

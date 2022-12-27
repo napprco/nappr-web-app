@@ -26,8 +26,10 @@
   border-bottom: 0;
 }
 
+.improve-security-btn-container {
+  margin-block: 2rem;
+}
 .improve-securty-btn {
-  margin-top: 0.5rem;
   display: inline-block;
   height: 50px;
   width: 150px;
@@ -55,9 +57,8 @@
   color: red;
 }
 
-
-@media screen and (min-width:748px){
-    .login-security-page{
-        padding-inline:20%;
-    }
+@media screen and (min-width: 748px) {
+  .login-security-page {
+    padding-inline: 20%;
+  }
 }
