@@ -1,0 +1,24 @@
+.subscription {
+  padding-inline: 2rem;
+}
+
+.subscription-body {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.subscription-body img {
+  width: 150px;
+  height: 150px;
+}
+.subscription-btn-container {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .subscription {
+    padding-inline: 20%;
+  }
+}

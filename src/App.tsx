@@ -15,6 +15,7 @@ import LoginSecurityPage from './pages/LoginSecurityPage/LoginSecurityPage';
 import PasswordUpdate from './pages/PasswordUpdate/PasswordUpdate';
 import EditPersonalDetails from './pages/EditPersonalDetails/EditPersonalDetails';
 import PaymentMethod from './pages/PaymentMethod/PaymentMethod';
+import Subscription from './pages/Subscription/Subscription';
 function App() {
   return (
     <div>
@@ -33,6 +34,7 @@ function App() {
         <Route path='/updatepassword' element={<PasswordUpdate />}></Route>
         <Route path='/home/editdetails' element={<EditPersonalDetails />}></Route>
         <Route path='/home/payment/method' element={<PaymentMethod />}></Route>
+        <Route path='/home/subscription' element={<Subscription />}></Route>
       </Routes>
     </div>
   );

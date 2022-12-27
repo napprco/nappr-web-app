@@ -56,7 +56,7 @@ const UserAccount: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to='' className='user-account-item'>
+              <Link to='/home/subscription' className='user-account-item'>
                 <div className='user-account-item-icon'>
                   <img src={subscribeIcon} alt='' />
                 </div>
