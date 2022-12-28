@@ -115,6 +115,14 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 280px) {
+  .choose-plan {
+    padding: 0.5rem;
+  }
+  .single-plan {
+    height: 120px;
+  }
+}
 @media screen and (max-width: 500px) {
   .plans-container {
     padding-inline: 1rem;
