@@ -1,6 +1,7 @@
 .order-summary {
   padding-inline: 1.5rem;
   padding-bottom: 2rem;
+  position: relative;
 }
 .order-summary-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);

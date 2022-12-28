@@ -7,19 +7,26 @@ import visaIcon from '../../assets/images/imgbin-visa-credit-card-debit-card-vis
 import payPalIcon from '../../assets/images/pp258-removebg-preview 1.png';
 import BackButton from '../../components/Button/BackButton';
 import SubscriptionSucessful from '../Subscription/SubscriptionSucessful';
+import PaymentOptions from '../../components/PaymentOptions/PaymentOptions';
 
 const OrderSummary = () => {
   const [isModal, setIsModal] = useState<boolean>(false);
+  const [isPaymentModal, setIsPaymentModal] = useState<boolean>(false);
 
   const handleCloseModal = () => setIsModal(false);
+
+  const handleClosePaymentModal = () => setIsPaymentModal(false);
+  const handleOpenPaymentModal = () => setIsPaymentModal(true);
 
   const handleOpenModal = () => setIsModal(true);
 
   return (
     <>
       {isModal && <SubscriptionSucessful handleCloseModal={handleCloseModal} />}
-      <BackButton page='/' />
+
       <div className='order-summary'>
+        {isPaymentModal && <PaymentOptions />}
+        <BackButton page='/' />
         <article className='order-summary-header'>
           <h1>Order Summary</h1>
           <p>Monthly Premium Plan</p>
@@ -47,7 +54,9 @@ const OrderSummary = () => {
               <img src={payPalIcon} alt='' />
             </div>
             <div className='add-payment-btn'>
-              <button type='button'>Add</button>
+              <button type='button' onClick={handleOpenPaymentModal}>
+                Add
+              </button>
             </div>
           </div>
         </article>
