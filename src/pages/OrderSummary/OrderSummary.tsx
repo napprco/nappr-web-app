@@ -8,14 +8,22 @@ import payPalIcon from '../../assets/images/pp258-removebg-preview 1.png';
 import BackButton from '../../components/Button/BackButton';
 import SubscriptionSucessful from '../Subscription/SubscriptionSucessful';
 import PaymentOptions from '../../components/PaymentOptions/PaymentOptions';
+import CardDetailsModal from '../../components/CardDetailsModal/CardDetailsModal';
 
 const OrderSummary = () => {
   const [isModal, setIsModal] = useState<boolean>(false);
   const [isPaymentModal, setIsPaymentModal] = useState<boolean>(false);
+  const [isCardDetailsModal, setIsCardDetailsModal] = useState<boolean>(false);
+
+  const handleOpenCardDetailsModal = () => setIsCardDetailsModal(true);
+  const handleCloseCardDetailsModal = () => setIsCardDetailsModal(false);
 
   const handleCloseModal = () => setIsModal(false);
 
-  const handleClosePaymentModal = () => setIsPaymentModal(false);
+  const handleClosePaymentModal = () => {
+    setIsPaymentModal(false);
+    handleOpenCardDetailsModal();
+  };
   const handleOpenPaymentModal = () => setIsPaymentModal(true);
 
   const handleOpenModal = () => setIsModal(true);
@@ -26,6 +34,9 @@ const OrderSummary = () => {
 
       <div className='order-summary'>
         {isPaymentModal && <PaymentOptions handleClosePaymentModal={handleClosePaymentModal} />}
+        {isCardDetailsModal && (
+          <CardDetailsModal handleCloseCardDetailsModal={handleCloseCardDetailsModal} />
+        )}
         <BackButton page='/' />
         <article className='order-summary-header'>
           <h1>Order Summary</h1>

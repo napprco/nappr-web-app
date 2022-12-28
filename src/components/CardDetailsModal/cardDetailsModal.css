@@ -1,0 +1,68 @@
+.card-detail-modal {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: var(--whiteColor);
+  right: 0;
+  padding: 1.5rem;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.card-details-header-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.card-details-close {
+  cursor: pointer;
+}
+.card-details-close i {
+  font-size: 1.5rem;
+  color: var(--lightGrey);
+}
+.details-cancel-btn {
+  color: var(--primaryColor);
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.card-details-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-number-input {
+  position: relative;
+}
+.card-number-input img {
+  position: absolute;
+  right: 1rem;
+  top: 3.5px;
+  cursor: pointer;
+}
+.card-details-form-group {
+  margin-top: -2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-detail-form-item {
+  width: 100%;
+  height: 100%;
+}
+
+.card-details-form-group input {
+  padding: 1rem;
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 0.5px solid var(--primaryColor);
+  border-radius: var(--radius);
+}
+
+.card-detail-form-item-1 input {
+  background: green;
+}
