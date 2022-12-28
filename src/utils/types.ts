@@ -14,6 +14,9 @@ export interface BackButtonProps {
 export interface ProviderProps {
   children: React.ReactNode;
 }
+export interface SubscriptionSuccessfulProps {
+  handleCloseModal: () => void;
+}
 
 // export interface NapprFooterProps {
 //   imageSource: string;

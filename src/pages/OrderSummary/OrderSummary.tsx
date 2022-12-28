@@ -1,14 +1,23 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import './orderSummary.css';
 import masterCardIcon from '../../assets/images/mastercard-logo-mastercard-logo-png-vector-download-19-removebg-preview 1.png';
 import visaIcon from '../../assets/images/imgbin-visa-credit-card-debit-card-visa-CVupnbKnhhXkYdQ3EY1sZ3ErQ-removebg-preview 1.png';
 import payPalIcon from '../../assets/images/pp258-removebg-preview 1.png';
 import BackButton from '../../components/Button/BackButton';
+import SubscriptionSucessful from '../Subscription/SubscriptionSucessful';
 
 const OrderSummary = () => {
+  const [isModal, setIsModal] = useState<boolean>(false);
+
+  const handleCloseModal = () => setIsModal(false);
+
+  const handleOpenModal = () => setIsModal(true);
+
   return (
     <>
+      {isModal && <SubscriptionSucessful handleCloseModal={handleCloseModal} />}
       <BackButton page='/' />
       <div className='order-summary'>
         <article className='order-summary-header'>
@@ -43,10 +52,8 @@ const OrderSummary = () => {
           </div>
         </article>
         <article className='confirm-btn-container'>
-          <button type='button' className='submit-btn'>
-            <Link to='/info' className='submit-btn-link'>
-              Confirm and Pay
-            </Link>
+          <button type='button' className='submit-btn' onClick={handleOpenModal}>
+            <p className='submit-btn-link'>Confirm and Pay</p>
           </button>
         </article>
       </div>
