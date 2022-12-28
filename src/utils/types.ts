@@ -18,6 +18,9 @@ export interface SubscriptionSuccessfulProps {
   handleCloseModal: () => void;
 }
 
+export interface PaymentOptionsProps {
+  handleClosePaymentModal: () => void;
+}
 // export interface NapprFooterProps {
 //   imageSource: string;
 // }

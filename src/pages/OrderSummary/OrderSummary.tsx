@@ -25,7 +25,7 @@ const OrderSummary = () => {
       {isModal && <SubscriptionSucessful handleCloseModal={handleCloseModal} />}
 
       <div className='order-summary'>
-        {isPaymentModal && <PaymentOptions />}
+        {isPaymentModal && <PaymentOptions handleClosePaymentModal={handleClosePaymentModal} />}
         <BackButton page='/' />
         <article className='order-summary-header'>
           <h1>Order Summary</h1>
