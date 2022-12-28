@@ -402,8 +402,15 @@ Form Page
   display: flex;
   justify-content: center;
 }
+.company-logo {
+  height: 50px;
+  width: 100px;
+}
 .company-logo img {
   cursor: pointer;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .mobile-menu-footer {
