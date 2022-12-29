@@ -5,9 +5,9 @@ import facebookIcon from '../../assets/images/1260673-removebg-preview 1.png';
 
 const FirstStep: React.FC = () => {
   return (
-    <div className='page sign-up'>
+    <div>
       <h1 className='form-header'>Signup to NAPPR</h1>
-      <div className='form signup-form'>
+      <div className=' signup-form'>
         <div className='form-control'>
           <label htmlFor='email'>Username</label>
           <div className='input-container'>

@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 const SecondStep: React.FC = () => {
   return (
-    <div className='page sign-in'>
+    <div>
       <h1 className='form-header'>Add Your Info</h1>
-      <div className='form login-form'>
+      <div className=' login-form'>
         <div className='form-control'>
           <label htmlFor='firstName'>First Name</label>
           <div className='input-container'>
