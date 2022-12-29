@@ -5,7 +5,6 @@ import BackButton from '../../components/Button/BackButton';
 const SecondStep: React.FC = () => {
   return (
     <>
-      <BackButton page='/signup' />
       <div className='page sign-in'>
         <h1 className='form-header'>Add Your Info</h1>
 

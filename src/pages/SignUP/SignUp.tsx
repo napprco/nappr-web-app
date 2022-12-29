@@ -9,10 +9,8 @@ const SignUp: React.FC = () => {
     <>
       <BackButton page='/signin' />
       <form action=''>
-        <div className='page sign-up'>
-          <h1 className='form-header'>Signup to NAPPR</h1>
-          <FirstStep />
-        </div>
+        {/* <FirstStep /> */}
+        <SecondStep />
       </form>
     </>
   );
