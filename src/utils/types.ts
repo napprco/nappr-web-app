@@ -25,6 +25,10 @@ export interface PaymentOptionsProps {
 export interface CardDetailsProps {
   handleCloseCardDetailsModal: () => void;
 }
+
+export interface FormBackButtonProps {
+  handleDecrementStep: () => void;
+}
 // export interface NapprFooterProps {
 //   imageSource: string;
 // }

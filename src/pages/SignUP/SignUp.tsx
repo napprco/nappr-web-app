@@ -1,13 +1,25 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-import BackButton from '../../components/Button/BackButton';
 import FirstStep from './FirstStep';
 import ThirdStep from './ThirdStep';
 import SecondStep from './SecondStep';
+import FormBackButton from '../../components/Button/FormBackButton';
 
 const SignUp: React.FC = () => {
+  const [firstName, setFirstName] = useState<string>('');
+  const [lastName, setLastName] = useState<string>('');
+  const [city, setCity] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [confirmPassword, setConfirmPassword] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [username, setUsername] = useState<string>('');
+  const [phoneNumber, setPhoneNumber] = useState<string>('');
   const [page, setPage] = useState<number>(0);
+
+  const handleIncrementStep = () => setPage(page + 1);
+  const handleDecrementStep = () => setPage(page - 1);
+
   const ConditionalComponent = () => {
     switch (page) {
       case 0:
@@ -22,12 +34,12 @@ const SignUp: React.FC = () => {
   };
   return (
     <>
-      <BackButton page='/signin' />
+      {page > 0 && <FormBackButton handleDecrementStep={handleDecrementStep} />}
       <div>
         <form action='' className='page sign-in'>
           {ConditionalComponent()}
-          <button type='submit' className='submit-btn'>
-            Next
+          <button type='button' className='submit-btn' onClick={handleIncrementStep}>
+            {page === 0 || page === 1 ? 'Next' : 'Sign up'}
           </button>
           <p className='form-question info-form-question'>
             Already have an account?

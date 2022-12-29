@@ -30,3 +30,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.form-back-btn {
+  width: 100px;
+  height: 50px;
+  background: var(--primaryColor);
+  margin: 1.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  border: none;
+  color: var(--whiteColor);
+  font-size: 1rem;
+}
