@@ -25,17 +25,6 @@ const ThirdStep: React.FC = () => {
             <p id='password-match-text'>Both Passwords must match </p>
           </div>
         </div>
-        <button type='submit' className='submit-btn'>
-          <Link to='/home' className='submit-btn-link'>
-            Sign up
-          </Link>
-        </button>
-        <p className='form-question'>
-          Already have an account?
-          <Link to='/signup' className='signup-btn'>
-            Sign in
-          </Link>{' '}
-        </p>
       </div>
     </div>
   );

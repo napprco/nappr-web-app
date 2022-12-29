@@ -13,6 +13,15 @@ const SignUp: React.FC = () => {
         {/* <FirstStep /> */}
         {/* <SecondStep /> */}
         <ThirdStep />
+        <button type='submit' className='submit-btn'>
+          <p className='submit-btn-link'>Next</p>
+        </button>
+        <p className='form-question info-form-question'>
+          Already have an account?
+          <Link to='/signin' className='signup-btn'>
+            Sign in
+          </Link>{' '}
+        </p>
       </form>
     </>
   );

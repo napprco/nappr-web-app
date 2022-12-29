@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-
-import BackButton from '../../components/Button/BackButton';
-
 const SecondStep: React.FC = () => {
   return (
     <div className='page sign-in'>
@@ -45,15 +42,6 @@ const SecondStep: React.FC = () => {
             </div>
           </div>
         </div>
-        <button type='submit' className='submit-btn'>
-          <p className='submit-btn-link'>Next</p>
-        </button>
-        <p className='form-question info-form-question'>
-          Already have an account?
-          <Link to='/signin' className='signup-btn'>
-            Sign in
-          </Link>{' '}
-        </p>
       </div>
     </div>
   );

@@ -34,15 +34,6 @@ const FirstStep: React.FC = () => {
           </div>
           <p>Continue with Facebook</p>
         </div>
-        <button type='button' className='submit-btn'>
-          <p className='submit-btn-link'>Continue</p>
-        </button>
-        <p className='form-question'>
-          Already have an account?{' '}
-          <Link to='/signin' className='signup-btn'>
-            Signin
-          </Link>
-        </p>
       </div>
     </div>
   );
