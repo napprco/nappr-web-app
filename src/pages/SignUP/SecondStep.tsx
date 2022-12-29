@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 
 import BackButton from '../../components/Button/BackButton';
 
-const InfoPage: React.FC = () => {
+const SecondStep: React.FC = () => {
   return (
     <>
       <BackButton page='/signup' />
       <div className='page sign-in'>
         <h1 className='form-header'>Add Your Info</h1>
 
-        <form action='' className='form login-form'>
+        <div className='form login-form'>
           <div className='form-control'>
             <label htmlFor='firstName'>First Name</label>
             <div className='input-container'>
@@ -49,9 +49,7 @@ const InfoPage: React.FC = () => {
             </div>
           </div>
           <button type='submit' className='submit-btn'>
-            <Link to='/purpose' className='submit-btn-link'>
-              Next
-            </Link>
+            <p className='submit-btn-link'>Next</p>
           </button>
           <p className='form-question info-form-question'>
             Already have an account?
@@ -59,10 +57,10 @@ const InfoPage: React.FC = () => {
               Sign in
             </Link>{' '}
           </p>
-        </form>
+        </div>
       </div>
     </>
   );
 };
 
-export default InfoPage;
+export default SecondStep;
