@@ -59,10 +59,7 @@
   width: 100%;
   border: none;
   outline: none;
+  font-size: 1.2rem;
   border: 0.5px solid var(--primaryColor);
   border-radius: var(--radius);
-}
-
-.card-detail-form-item-1 input {
-  background: green;
 }

@@ -12,6 +12,12 @@ const SignUp: React.FC = () => {
         <h1 className='form-header'>Signup to NAPPR</h1>
         <form action='' className='form signup-form'>
           <div className='form-control'>
+            <label htmlFor='email'>Username</label>
+            <div className='input-container'>
+              <input type='text' placeholder='Username' name='email' />
+            </div>
+          </div>
+          <div className='form-control'>
             <label htmlFor='email'>Email</label>
             <div className='input-container'>
               <input type='text' placeholder='abcde@gmail.com' name='email' />
