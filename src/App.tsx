@@ -7,7 +7,6 @@ import SignUp from './pages/SignUP/SignUp';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
 import ResetPasswordTwo from './pages/ResetPassword/ResetPasswordTwo';
 import ResetPasswordThree from './pages/ResetPassword/ResetPasswordThree';
-import PurposePage from './pages/PurposePage/PurposePage';
 import NapprHome from './pages/NapprHome/NapprHome';
 import PrivacySetting from './pages/PrivacySetting/PrivacySetting';
 import LoginSecurityPage from './pages/LoginSecurityPage/LoginSecurityPage';
@@ -26,7 +25,6 @@ function App() {
         <Route path='/resetpassword' element={<ResetPassword />}></Route>
         <Route path='/resetpasswordtwo' element={<ResetPasswordTwo />}></Route>
         <Route path='/resetpasswordthree' element={<ResetPasswordThree />}></Route>
-        <Route path='/purpose' element={<PurposePage />}></Route>
         <Route path='/home' element={<NapprHome />}></Route>
         <Route path='/privacysetting' element={<PrivacySetting />}></Route>
         <Route path='/loginsecurity' element={<LoginSecurityPage />}></Route>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 import BackButton from '../../components/Button/BackButton';
 import FirstStep from './FirstStep';
+import ThirdStep from './ThirdStep';
 import SecondStep from './SecondStep';
 
 const SignUp: React.FC = () => {
@@ -10,7 +11,8 @@ const SignUp: React.FC = () => {
       <BackButton page='/signin' />
       <form action=''>
         {/* <FirstStep /> */}
-        <SecondStep />
+        {/* <SecondStep /> */}
+        <ThirdStep />
       </form>
     </>
   );
