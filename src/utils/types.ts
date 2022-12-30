@@ -32,3 +32,25 @@ export interface FormBackButtonProps {
 // export interface NapprFooterProps {
 //   imageSource: string;
 // }
+
+export interface FirstStepInputType {
+  email: string;
+  username: string;
+}
+export interface SecondStepInputType {
+  firstName: string;
+  lastName: string;
+  phoneNumber: string;
+  city: string;
+}
+
+export interface ThirdStepInputType {
+  purpose: string;
+  password: string;
+  confirmPassword: string;
+}
+
+export interface FirstStepProps {
+  firstStepFormData: FirstStepInputType;
+  setFirstStepFormData: React.Dispatch<React.SetStateAction<FirstStepInputType>>;
+}

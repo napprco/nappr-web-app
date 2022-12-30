@@ -12,7 +12,7 @@ const CardDetailsModal: React.FC<CardDetailsProps> = ({ handleCloseCardDetailsMo
         </span>
         <h2 className='card-details-header'>Card Details</h2>
       </div>
-      <form action='' className='form signup-form'>
+      <form action=''>
         <div className='form-control card-number-input'>
           <div className='input-container '>
             <input type='number' placeholder='Card Number' name='cardNumber' />

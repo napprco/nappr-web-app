@@ -7,7 +7,15 @@ const ThirdStep: React.FC = () => {
         What is your purpose
         <br /> to use NAPPR ?
       </h1>
-
+      <div className='form-control '>
+        <h2 className='purpose-label'>I am </h2>
+        <select name='city' id='' className='city-options'>
+          <option value='B'>Nappr</option>
+          <option value='C'>City Two</option>
+          <option value='D'>City Three</option>
+          <option value='E'>City Four</option>
+        </select>
+      </div>
       <div className=' login-form'>
         <div className='form-control'>
           <h2 className='purpose-password-header'>Set Password</h2>
