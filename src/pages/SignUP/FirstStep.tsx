@@ -3,6 +3,8 @@
 import { FirstStepProps } from '../../utils/types';
 
 const FirstStep: React.FC<FirstStepProps> = ({ firstStepFormData, setFirstStepFormData }) => {
+  console.log(firstStepFormData.email);
+
   return (
     <div>
       <h1 className='form-header'>Signup to NAPPR</h1>

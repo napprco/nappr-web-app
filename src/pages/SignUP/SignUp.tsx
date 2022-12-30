@@ -25,21 +25,59 @@ const SignUp: React.FC = () => {
     email: '',
     username: '',
   });
-  const [page, setPage] = useState<number>(0);
 
-  const handleIncrementStep = () => setPage(page + 1);
+  const [page, setPage] = useState<number>(0);
+  // const handleIncrementStep = () => {
+  //   console.log(firstStepFormData.email);
+  //   setPage(page + 1);
+  // };
   const handleDecrementStep = () => setPage(page - 1);
   const handleSubmit = () => {
     if (page === 0) {
-      console.log(firstStepFormData.email, firstStepFormData.username);
-      if (firstStepFormData.username === '') {
-        return alert('Please enter a valid username');
+      if (firstStepFormData.username.trim() === '' || firstStepFormData.email.trim() === '') {
+        return alert('Fill your details correctly');
+      } else {
+        setPage(page + 1);
       }
-    } else {
-      setPage(page + 1);
+    }
+    if (page === 1) {
+      if (
+        secondStepFormData.city.trim() === '' ||
+        secondStepFormData.firstName.trim() === '' ||
+        secondStepFormData.lastName.trim() === '' ||
+        secondStepFormData.phoneNumber.trim() === '' ||
+        secondStepFormData.city.trim() === ''
+      ) {
+        return alert('Check to fill every field correctly');
+      } else {
+        setPage(page + 1);
+      }
     }
     if (page === 2) {
-      setPage(0);
+      if (
+        thirdStepFormData.purpose.trim() === '' ||
+        thirdStepFormData.password.trim().length < 3 ||
+        thirdStepFormData.confirmPassword.trim() !== thirdStepFormData.password.trim()
+      ) {
+        alert('Ensure that the fields are filled properly');
+      } else {
+        setFirstStepFormData({
+          email: '',
+          username: '',
+        });
+        setSecondStepFormData({
+          city: '',
+          firstName: '',
+          lastName: '',
+          phoneNumber: '',
+        });
+        setThirdStepFormData({
+          purpose: '',
+          password: '',
+          confirmPassword: '',
+        });
+        setPage(0);
+      }
     }
   };
 
@@ -53,9 +91,19 @@ const SignUp: React.FC = () => {
           />
         );
       case 1:
-        return <SecondStep />;
+        return (
+          <SecondStep
+            secondStepFormData={secondStepFormData}
+            setSecondStepFormData={setSecondStepFormData}
+          />
+        );
       case 2:
-        return <ThirdStep />;
+        return (
+          <ThirdStep
+            thirdStepFormData={thirdStepFormData}
+            setThirdStepFormData={setThirdStepFormData}
+          />
+        );
       default:
         return (
           <FirstStep
@@ -69,9 +117,9 @@ const SignUp: React.FC = () => {
     <>
       {page > 0 && <FormBackButton handleDecrementStep={handleDecrementStep} />}
       <div>
-        <form action='' className='page sign-in' onSubmit={handleSubmit}>
+        <form action='' className='page sign-in'>
           {ConditionalComponent()}
-          <button type='button' className='submit-btn' onClick={handleIncrementStep}>
+          <button type='button' className='submit-btn' onClick={handleSubmit}>
             {page === 0 || page === 1 ? 'Next' : 'Sign up'}
           </button>
           <p className='form-question info-form-question'>

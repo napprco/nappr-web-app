@@ -54,3 +54,12 @@ export interface FirstStepProps {
   firstStepFormData: FirstStepInputType;
   setFirstStepFormData: React.Dispatch<React.SetStateAction<FirstStepInputType>>;
 }
+export interface SecondStepProps {
+  secondStepFormData: SecondStepInputType;
+  setSecondStepFormData: React.Dispatch<React.SetStateAction<SecondStepInputType>>;
+}
+
+export interface ThirdStepProps {
+  thirdStepFormData: ThirdStepInputType;
+  setThirdStepFormData: React.Dispatch<React.SetStateAction<ThirdStepInputType>>;
+}
