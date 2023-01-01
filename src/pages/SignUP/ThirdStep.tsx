@@ -11,6 +11,7 @@ const ThirdStep: React.FC<ThirdStepProps> = ({ setThirdStepFormData, thirdStepFo
         <select
           name='city'
           className='city-options'
+          value={thirdStepFormData.purpose}
           onChange={(e) =>
             setThirdStepFormData({
               ...thirdStepFormData,

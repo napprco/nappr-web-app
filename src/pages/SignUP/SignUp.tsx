@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { REGISTER_URL } from '../../utils/constants';
 
 import FirstStep from './FirstStep';
 import ThirdStep from './ThirdStep';
@@ -9,6 +10,10 @@ import FormBackButton from '../../components/Button/FormBackButton';
 import { FirstStepInputType, SecondStepInputType, ThirdStepInputType } from '../../utils/types';
 
 const SignUp: React.FC = () => {
+  const [firstStepFormData, setFirstStepFormData] = useState<FirstStepInputType>({
+    email: '',
+    username: '',
+  });
   const [secondStepFormData, setSecondStepFormData] = useState<SecondStepInputType>({
     firstName: '',
     lastName: '',
@@ -21,20 +26,20 @@ const SignUp: React.FC = () => {
     password: '',
     confirmPassword: '',
   });
-  const [firstStepFormData, setFirstStepFormData] = useState<FirstStepInputType>({
-    email: '',
-    username: '',
-  });
 
   const [page, setPage] = useState<number>(0);
-  // const handleIncrementStep = () => {
-  //   console.log(firstStepFormData.email);
-  //   setPage(page + 1);
-  // };
+  const handleIncrementStep = () => {
+    console.log(firstStepFormData.email);
+    setPage(page + 1);
+  };
   const handleDecrementStep = () => setPage(page - 1);
-  const handleSubmit = () => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
     if (page === 0) {
-      if (firstStepFormData.username.trim() === '' || firstStepFormData.email.trim() === '') {
+      if (
+        firstStepFormData.username.trim() === '' ||
+        !/\S+@\S+\.\S+/.test(firstStepFormData.email)
+      ) {
         return alert('Fill your details correctly');
       } else {
         setPage(page + 1);
@@ -61,22 +66,51 @@ const SignUp: React.FC = () => {
       ) {
         alert('Ensure that the fields are filled properly');
       } else {
-        setFirstStepFormData({
-          email: '',
-          username: '',
-        });
-        setSecondStepFormData({
-          city: '',
-          firstName: '',
-          lastName: '',
-          phoneNumber: '',
-        });
-        setThirdStepFormData({
-          purpose: '',
-          password: '',
-          confirmPassword: '',
-        });
-        setPage(0);
+        const headers = {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+          Authorization: 'Bearer',
+          mode: 'cors',
+        };
+        try {
+          const userDetails = await fetch(REGISTER_URL, {
+            method: 'POST',
+            headers,
+            body: JSON.stringify({
+              username: 'Ebimene',
+              lastName: 'Agent',
+              // email: firstStepFormData.email,
+              // firstName: secondStepFormData.firstName,
+              // lastName: secondStepFormData.lastName,
+              // city: secondStepFormData.city,
+              // phoneNumber: secondStepFormData.phoneNumber,
+              // purpose: thirdStepFormData.purpose,
+              // password: thirdStepFormData.password,
+            }),
+          });
+          const responseData = await userDetails.json();
+          if (responseData.status === 200) {
+            console.log(responseData);
+            setFirstStepFormData({
+              email: '',
+              username: '',
+            });
+            setSecondStepFormData({
+              city: '',
+              firstName: '',
+              lastName: '',
+              phoneNumber: '',
+            });
+            setThirdStepFormData({
+              purpose: '',
+              password: '',
+              confirmPassword: '',
+            });
+            setPage(0);
+          }
+        } catch (err) {
+          console.log(err);
+        }
       }
     }
   };
@@ -117,10 +151,10 @@ const SignUp: React.FC = () => {
     <>
       {page > 0 && <FormBackButton handleDecrementStep={handleDecrementStep} />}
       <div>
-        <form action='' className='page sign-in'>
+        <form className='page sign-in' onSubmit={handleSubmit}>
           {ConditionalComponent()}
-          <button type='button' className='submit-btn' onClick={handleSubmit}>
-            {page === 0 || page === 1 ? 'Next' : 'Sign up'}
+          <button type='submit' className='submit-btn'>
+            {page === 2 ? 'Sign up' : 'Next'}
           </button>
           <p className='form-question info-form-question'>
             Already have an account?

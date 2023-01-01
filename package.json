@@ -26,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://www.nappr.io/api/v1",
   "eslintConfig": {
     "extends": [
       "react-app",
